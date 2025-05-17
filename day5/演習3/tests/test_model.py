@@ -118,7 +118,7 @@ def test_model_accuracy(train_model):
     accuracy = accuracy_score(y_test, y_pred)
 
     # Titanicデータセットでは0.75以上の精度が一般的に良いとされる
-    assert accuracy >= 0.75, f"モデルの精度が低すぎます: {accuracy}"
+    assert accuracy >= 0.80, f"モデルの精度が低すぎます: {accuracy}"
 
 
 def test_model_inference_time(train_model):
